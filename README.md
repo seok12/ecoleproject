@@ -9,8 +9,10 @@ VMware Workstation을 설치후 실행
 가상서버로 우분투를 설치하겠습니다
 iso파일을 다운받고 create a New Virtual Machin을 클릭하여 새로운 가상 머신 생성을 합니다
 가상머신 디스크에 iso 이미지 파일을 넣어주고 실행하고 
-<img width="569" alt="스크린샷 2023-09-09 052942" src="https://github.com/seok12/ecoleproject/assets/48661266/b9c04b21-3a52-44ef-9f2c-1db52950ea95">
+
 메모리와 다른 하드웨어 부분을 크기에 맞게 지정합니다
+
+<img width="569" alt="스크린샷 2023-09-09 052942" src="https://github.com/seok12/ecoleproject/assets/48661266/b9c04b21-3a52-44ef-9f2c-1db52950ea95">
 
 ------------------------------------------------------------
 생성되어 우분투를 실행합니다
@@ -21,6 +23,9 @@ ubuntu 실행을 하고 done 을 누르다보면 your name과 servername과 pass
 
 
 <img width="642" alt="스크린샷 2023-09-09 051231" src="https://github.com/seok12/ecoleproject/assets/48661266/bf3d161a-cf16-4d91-91f1-fba7cdbf06d8">
+
+
+------------------------------------------------------------
 
 ip 주소도 입력해줍니다
 
@@ -37,6 +42,9 @@ ip 주소도 입력해줍니다
 또 다른 방법으로는 설치되어있는 우분투를 삭제하고 가상 프로그램을 다시 실행시키는 것입니다
 하지만 공부해오던 데이터들이 삭제되는 것을 큰 부담이 되어서 다른 컴퓨터로 하는 방법을 선택했습니다
 
+------------------------------------------------------------
+
+
 sudo apt update && sudo apt -y upgrade && sudo apt -y install curl wget sudo
 
 업데이트 시킨후
@@ -47,10 +55,15 @@ sha256sum -c && sudo bash install.sh
 sudo apt-get install cockit
 접근은 ip주소에 :9090 포트로 접속하고 계정은 ubuntu계정을 사용하면 접속이 가능합니다
 
+------------------------------------------------------------
+
+
 추가로 window 10설치를 진행하였습니다
 
 https://www.microsoft.com/ko-kr/software-download/windows10
 여기 주소에서 도구 다운로드 iso다운을하여 사용하였습니다
+
+------------------------------------------------------------
 
 <img width="451" alt="스크린샷 2023-09-09 041923" src="https://github.com/seok12/ecoleproject/assets/48661266/291e8cdd-4214-477e-aa70-267ba966e5ee">
 실행시킨 화면이고 

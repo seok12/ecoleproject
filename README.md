@@ -9,10 +9,10 @@ VMware Workstation을 설치후 실행
 가상서버로 우분투를 설치하겠습니다
 iso파일을 다운받고 create a New Virtual Machin을 클릭하여 새로운 가상 머신 생성을 합니다
 가상머신 디스크에 iso 이미지 파일을 넣어주고 실행하고 
-
 <img width="569" alt="스크린샷 2023-09-09 052942" src="https://github.com/seok12/ecoleproject/assets/48661266/b9c04b21-3a52-44ef-9f2c-1db52950ea95">
 메모리와 다른 하드웨어 부분을 크기에 맞게 지정합니다
 
+------------------------------------------------------------
 생성되어 우분투를 실행합니다
 
 ubuntu 실행을 하고 done 을 누르다보면 your name과 servername과 password를 입력을 해줍니다

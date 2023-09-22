@@ -1,4 +1,4 @@
-ecole.yeongs.kr
+<a hirf="ecole.yeongs.kr">에꼴<a/>
 
 
 <img width="1257" alt="스크린샷 2023-09-23 044033" src="https://github.com/seok12/ecoleproject/assets/48661266/335ac72f-64d1-49f2-8e1e-36d4cca84be3">

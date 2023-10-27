@@ -13,3 +13,5 @@
 try catch 를 사용하여 에러문을 나오게 하였습니다
 css를 활용하여 심플하면서도 보기좋게 꾸몄습니다
 
+<img width="208" alt="스크린샷 2023-10-28 071317" src="https://github.com/seok12/ecoleproject/assets/48661266/5d576534-6cd7-47be-87a6-3f047857086f">
+이렇게 반응형을 했습니다

@@ -1,4 +1,4 @@
-e230501.ksecole.kr
+<a href="e230501.ksecole.kr">로그인 사이트</a>
 
 <img width="574" alt="스크린샷 2023-10-28 065145" src="https://github.com/seok12/ecoleproject/assets/48661266/02035d17-ce9b-424d-936b-86c3261bbdcc">
 

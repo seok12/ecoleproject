@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>수화 학습 서비스</title>
+    <link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" />
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        li {
+            list-style: none;
+        }
+
+        .picture {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .picture li {
+            float: left;
+            width: 50%;
+        }
+
+        .picture li a {
+            display: block;
+            margin: 5px;
+            border: 1px;
+        }
+
+        .picture li img {
+            display: block;
+            width: 50%;
+            height: auto;
+        }
+
+        .picture li img:hover {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .control {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .mainimg {
+            margin-bottom: 20%;
+            width: 100%;
+        }
+
+        .mainBtn {
+            margin: 10%;
+            display: flex;
+            width: 80px;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            border: solid 3px;
+            border-radius: 9px;
+         
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+           
+            $('#levelBtn').on('click', function () {
+                
+                $('#levelPopup').popup('open');
+            });
+
+            
+            window.setLevel = function (level) {
+                
+                $('#levelBtn').text(level);
+               
+                $('#levelPopup').popup('close');
+            };
+        });
+    </script>
+</head>
+
+<body>
+    <div data-theme="b">
+        <div data-role="page" id="home">
+            <div data-role="header" data-theme="b">
+                <h1>수화 학습 서비스</h1>
+            </div>
+            <div data-role="content" style="text-align: center">
+                <img class="mainimg" src="메인 이미지.png" />
+                <div>
+                    <ul data-role="listview" data-inset="true">
+                        <li>
+                            <a class="head" href="#intro">서비스 소개</a>
+                        </li>
+                        <li>
+                            <a class="head" href="#movie" data-rel="dialog">국가별 수화</a>
+                        </li>
+                        <li>
+                            <a class="head" href="#wizard3-1" data-rel="dialog">수화 단어 예시</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="control">
+            
+                <a class="mainBtn" id="levelBtn" href="#" data-role="button" data-rel="popup" data-position-to="window"
+                    data-transition="pop">
+                    난이도
+                </a>
+            <div data-role="popup" id="levelPopup" style="position:unset;">
+               <ul data-role="listview">
+                  <li><a href="#" onclick="setLevel('초급')">초급</a></li>
+                  <li><a href="#" onclick="setLevel('중급')">중급</a></li>
+                  <li><a href="#" onclick="setLevel('고급')">고급</a></li>
+               </ul>
+            </div>
+            
+                <a class="mainBtn" href="#" data-role="button">학습하기</a>
+         
+         </div>
+            
+
+
+            <div data-role="footer" data-position="fixed" data-theme="b">
+                <h1>Team '가능성'</h1>
+            </div>
+        </div>
+
+        <div data-role="page" id="intro" data-theme="b">
+            <div data-role="header" data-theme="b">
+                <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+                <h1>서비스 소개</h1>
+            </div>
+            <div data-role="content">
+                <div style="text-align:center">
+                    <img style="width: 70%; height: 70% ;" src="introduce.png">
+                </div>
+                <div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>개발 배경</h3>
+                        <p>'수화'라는것 자체는 우리에게 무척 익숙하지만, 실상 '수화'에 대해 잘 아는 이는 드물다. 그래서 수화를 배우고 싶은 사람들에게 더 나은 교육환경을 제공하고,
+                            후천적으로 장애를 얻은 사람들이 수화를 배워야할 때 교육이 가능하다.</p>
+                        <p>즉, 수화에 대한 접근성이 높아질 것을 예상으로 개발하게 되었습니다.</p>
+                    </div>
+                    <div data-role="collapsible">
+                        <h3>구동 과정</h3>
+                        <li>1. 사용자의 디바이스를 통해 자신이 익힌 수화 동작을 구현한다.</li>
+                        <li>2. 스마트폰이 Microsoft Azure 서비스와 연동되어 기존에 있던 수화 단어와 비교 분석을 한다.</li>
+                        <li>3. 정상적인 수화 동작이라면 해당 단어를 표기하는 AI 학습 모델이다.</li>
+                        <p>Microsoft Azure 서비스 중 Object Detection과 Classification에 수화 데이터를 입력하는 과정을 보여주고있다.</p>
+                        <img style="width: 100%; height: 100%; " src="Microsoft.png"></img>
+
+                    </div>
+                    <div data-role="collapsible">
+                        <h3>기대 효과</h3>
+                        <P>서비스를 반복해서 이용한다면, 수화를 더욱 편하고 빠르게 학습 할 수 있을 것입니다. </P>
+                        <P>그리고 수화를 익히고 있는 사람은 매우 적기 때문에, AI 수화 학습 서비스가 그것을 대체할 수 있다.</P>
+                    </div>
+                </div>
+            </div>
+            <div data-role="footer" data-position="fixed" data-theme="b">
+                <h1>Team '가능성'</h1>
+            </div>
+        </div>
+
+        <div data-role="page" id="movie" data-theme="b">
+            <div data-role="header" data-position="fixed" data-theme="b">
+                <h1>수화 지문자</h1>
+            </div>
+            <div data-role="content">
+                <div class="ui-bar ui-bar-a">한국</div><br />
+                <li><img width="100%" height="240" src="korea.jpg"></li><br />
+                <div class="ui-bar ui-bar-a">English</div><br />
+                <li><img width="100%" height="240" src="english.png">
+                </li><br />
+            </div>
+            <div data-role="footer" data-theme="b">
+            </div>
+        </div>
+
+        <div data-role="page" id="wizard3-1">
+            <div data-role="header">
+                <h1>수화 단어 예시</h1>
+            </div>
+            <div data-role="content">
+                <div class="ui-bar ui-bar-a">안녕하세요</div><br />
+                <li>
+                    <video controls width="100%" preload="metadata">
+                        <source src="./hello.mp4" type="video/mp4" />
+                    </video>
+                </li>
+            </div>
+            <div data-role="footer">
+                <a href="#home" data-direction="reverse">이전</a>
+                <a href="#wizard3-2" data-rel="dialog" data-transition="slide">다음</a>
+            </div>
+        </div>
+
+        <div data-role="page" id="wizard3-2">
+            <div data-role="header">
+                <h1></h1>
+            </div>
+            <div data-role="content">
+                <div class="ui-bar ui-bar-a">반갑습니다</div><br />
+                <li>
+                    <video controls width="100%" preload="metadata">
+                        <source src="nice to.mp4" type="video/mp4" />
+                    </video>
+                </li>
+
+                <div data-role="footer">
+                    <a href="#wizard3-1" data-direction="reverse">이전</a>
+                    <a href="#home">처음</a>
+                </div>
+
+            </div>
+
+
+        </div>
+</body>
+
+</html>
